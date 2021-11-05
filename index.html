@@ -26,7 +26,7 @@
     	.col-md-3{
     		margin-bottom: 40px;
     	}
-    	.album-poster{
+		.album-poster{
     		position: relative;
     		display: block;
     		border-radius: 7px;
@@ -37,7 +37,20 @@
     	.album-poster:hover{
     		box-shadow: none;
     		transform: scale(0.98) translateY(5px);
+    	} 
+		.poster{
+    		position: relative;
+    		display: block;
+    		border-radius: 7px;
+    		overflow: hidden;
+    		box-shadow: 0 15px 35px #3d2173a1;
+    		transition: all ease 0.4s;
     	}
+    	.poster:hover{
+    		box-shadow: none;
+    		transform: scale(0.98) translateY(5px);
+    	}
+
     	h3{
     		font-size: 34px;
     		margin-bottom: 34px;
@@ -151,7 +164,7 @@
 					<img src="images/Buju-Outside.jpg" alt="">
 				</a>
 				<h4>Outside</h4>
-				<p>Buju - 2020</p>
+				<p>Buju - 2021</p>
 			</div>
 			<div class="col-md-3">
 				<a href="#" class="album-poster" data-switch="6">
@@ -165,7 +178,7 @@
 					<img src="images/high.png" alt="">
 				</a>
 				<h4>High</h4>
-				<p>Adekunle & Davido - 2020</p>
+				<p>Adekunle & Davido - 2021</p>
 			</div>
 			
 		</div>
@@ -176,41 +189,41 @@
 				<h3>coming soon</h3>
 			</div>
 			<div class="col-md-2">
-				<a href="#" class="album-poster">
+				<a href="#" class="poster">
 					<img src="https://images.pexels.com/photos/1699161/pexels-photo-1699161.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
 				</a>
-				<h4></h4>
+				<h4>Top 100 songs</h4>
 			</div>
 			<div class="col-md-2">
-				<a href="#" class="album-poster">
+				<a href="#" class="poster">
 					<img src="https://images.pexels.com/photos/838702/pexels-photo-838702.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
 				</a>
-				<h4></h4>
+				<h4>Banding jams</h4>
 			</div>
 			<div class="col-md-2">
-				<a href="#" class="album-poster">
+				<a href="#" class="poster">
 					<img src="https://images.pexels.com/photos/894156/pexels-photo-894156.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
 				</a>
-				<h4></h4>
+				<h4>Exclusive jams</h4>
 			</div>
 			
 			<div class="col-md-2">
-				<a href="#" class="album-poster">
+				<a href="#" class="poster">
 					<img src="https://images.pexels.com/photos/2118046/pexels-photo-2118046.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
 				</a>
-				<h4></h4>
+				<h4>Top jams</h4>
 			</div>
 			<div class="col-md-2">
-				<a href="#" class="album-poster">
+				<a href="#" class="poster">
 					<img src="https://images.pexels.com/photos/1735240/pexels-photo-1735240.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
 				</a>
-				<h4></h4>
+				<h4>Hot girls summer</h4>
 			</div>
 			<div class="col-md-2">
-				<a href="#" class="album-poster">
+				<a href="#" class="poster">
 					<img src="https://images.pexels.com/photos/2272854/pexels-photo-2272854.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
 				</a>
-				<h4></h4>
+				<h4>best ever </h4>
 			</div>
 		</div>
 
@@ -231,6 +244,10 @@
 
 
 		// NOW I CLICK album-poster TO GET CURRENT SONG ID
+		$(".poster").on("click", function(e){{
+			alert("coming soon")
+		}});
+
 		$(".album-poster").on('click', function(e){
 			var dataSwitchId = $(this).attr('data-switch');
 			//console.log(dataSwitchId);
