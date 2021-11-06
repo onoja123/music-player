@@ -13,7 +13,7 @@
     <title>Online music streaming website </title>
     <style>
     	body{
-    		background-color: #F9C6D7;
+    		background-color: #f7f7f7;
     		font-family: Open sans;
     	}
     	img{
@@ -111,7 +111,78 @@
 		.aplayer .aplayer-info .aplayer-music{
 			margin-bottom: 5px;
 		}
+		.center{
+			text-align: center;
+			margin-top: -2px;
+		}
 
+.container {
+  margin-left: auto;
+  margin-right: auto;
+}
+.btn-outline { 
+ margin-top: 15px; 
+ border: solid 1px #bbbbbb;    
+ font-size: 24px; 
+ color: #bbbbbb; 
+ background: 0 0; 
+ transition: all .3s ease-in-out; 
+}
+.btn-outline:hover, .btn-outline:focus, .btn-outline:active, .btn-outline.active { 
+  border: solid 1px #bbbbbb;    
+  color: #000; 
+  background: #bbbbbb; 
+}
+
+.btn-social { 
+  display: inline-block; 
+  width: 48px; 
+  height: 48px; 
+  border: 1px solid #bbbbbb; 
+  border-radius: 100%; 
+  text-align: center; 
+  font-size: 24px; 
+  line-height: 46px; 
+}
+
+
+
+.list-inline { 
+  padding-left: 0; 
+  list-style: none; 
+  margin-left: -5px; }
+
+.list-inline > li { 
+  display: inline-block;  
+  padding-left: 5px; 
+  padding-right: 5px; 
+}
+
+.social-links { 
+  -webkit-animation: fade-in-down 0.9s; 
+  animation: fade-in-down 0.9s; 
+  -webkit-animation-delay: 0.2s; 
+  animation-delay: 0.2s; 
+}
+
+/* Animations */
+@-webkit-keyframes fade-in-down { 0% 
+  { opacity: 0; -webkit-transform: translateY(-10px); transform: translateY(-10px); 
+  }
+  100% { 
+    opacity: 1; 
+    -webkit-transform: translateY(0); 
+    transform: translateY(0); } }
+@keyframes fade-in-down { 
+  0% { opacity: 0; 
+    -webkit-transform: translateY(-10px); 
+    transform: translateY(-10px); 
+  }
+  100% { opacity: 1; 
+    -webkit-transform: translateY(0); 
+    transform: translateY(0); 
+  } 
+}
 
     </style>
  	</head>
@@ -164,7 +235,7 @@
 					<img src="images/Buju-Outside.jpg" alt="">
 				</a>
 				<h4>Outside</h4>
-				<p>Buju - 2021</p>
+				<p>Buju - 2020</p>
 			</div>
 			<div class="col-md-3">
 				<a href="#" class="album-poster" data-switch="6">
@@ -192,38 +263,38 @@
 				<a href="#" class="poster">
 					<img src="https://images.pexels.com/photos/1699161/pexels-photo-1699161.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
 				</a>
-				<h4>Top 100 songs</h4>
+				<h4></h4>
 			</div>
 			<div class="col-md-2">
 				<a href="#" class="poster">
 					<img src="https://images.pexels.com/photos/838702/pexels-photo-838702.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
 				</a>
-				<h4>Banging jams</h4>
+				<h4></h4>
 			</div>
 			<div class="col-md-2">
 				<a href="#" class="poster">
 					<img src="https://images.pexels.com/photos/894156/pexels-photo-894156.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
 				</a>
-				<h4>Exclusive jams</h4>
+				<h4></h4>
 			</div>
 			
 			<div class="col-md-2">
 				<a href="#" class="poster">
 					<img src="https://images.pexels.com/photos/2118046/pexels-photo-2118046.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
 				</a>
-				<h4>Top jams</h4>
+				<h4></h4>
 			</div>
 			<div class="col-md-2">
 				<a href="#" class="poster">
 					<img src="https://images.pexels.com/photos/1735240/pexels-photo-1735240.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
 				</a>
-				<h4>Hot girls summer</h4>
+				<h4></h4>
 			</div>
 			<div class="col-md-2">
 				<a href="#" class="poster">
 					<img src="https://images.pexels.com/photos/2272854/pexels-photo-2272854.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
 				</a>
-				<h4>best ever </h4>
+				<h4></h4>
 			</div>
 		</div>
 
@@ -232,6 +303,22 @@
 </div>
 
 	<div id="aplayer"></div>
+
+				<div class="container">
+  <div class="row">
+    <div class="col-md-12 text-center ">
+      <ul class="list-inline social-links">
+        <li><a href="https://github.com/olamideakintayo" class="btn-social btn-outline" data-toggle="tooltip" data-placement="top" title="Github"><i class="icon ion-social-github"></i></a>
+        </li>
+        <li><a href="https://twitter.com/kiddo_kash" class="btn-social btn-outline" title="Twitter"><i class="icon ion-social-twitter"></i></a>
+        </li>
+        <li><a href="https://ph.linkedin.com/in/olamide-akintayo-bba121180" class="btn-social btn-outline" title="LinkedIn"><i class="icon ion-social-linkedin"></i></a>
+        </li
+		</li>
+      </ul>
+    </div>
+  </div>
+</div>
 
 	<!-- Jquery Link -->
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
@@ -316,12 +403,7 @@
 				url: 'audio/high.mp3',
 				cover: 'images/high.png',
 			},
-
-
-
-
-
-
+                
 		    ]
 		});
 	</script>
